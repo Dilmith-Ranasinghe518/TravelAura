@@ -1,0 +1,151 @@
+.update-acc-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.update-acc-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.update-acc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.update-acc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.update-acc-grid textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 90px;
+}
+
+.update-acc-grid label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.update-acc-grid input,
+.update-acc-grid textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.update-acc-grid input:focus,
+.update-acc-grid textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+.update-acc-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.update-acc-images {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.update-acc-images h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.update-acc-image-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.update-acc-image-field input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.update-acc-preview {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.btn-acc-add-image,
+.btn-acc-remove,
+.btn-acc-submit {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-acc-add-image {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-acc-add-image:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+.btn-acc-remove {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-acc-remove:hover {
+  background: #dc2626;
+  transform: scale(1.02);
+}
+
+.btn-acc-submit {
+  background: #10b981;
+  color: white;
+  font-size: 16px;
+  padding: 14px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-acc-submit:hover {
+  background: #059669;
+  transform: scale(1.01);
+}

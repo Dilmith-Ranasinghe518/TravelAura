@@ -1,0 +1,312 @@
+/* RegisterUser.css */
+.reg-user-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reg-user-card {
+  display: flex;
+  width: 900px;
+  height: 550px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.reg-user-left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reg-user-left-content {
+  max-width: 320px;
+}
+
+.reg-user-welcome {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.reg-user-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.reg-user-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reg-user-feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+.reg-user-feature-icon {
+  font-size: 1.5rem;
+}
+
+.reg-user-right-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reg-user-form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.reg-user-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+.reg-user-instruction {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.reg-user-input-group {
+  margin-bottom: 20px;
+}
+
+.reg-user-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.reg-user-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.reg-user-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.reg-user-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reg-user-submit-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.reg-user-submit-btn:active {
+  transform: translateY(0);
+}
+
+.reg-user-submit-btn--loading {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.reg-user-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: reg-user-spin 1s linear infinite;
+}
+
+@keyframes reg-user-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.reg-user-divider {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.reg-user-divider::before,
+.reg-user-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.reg-user-divider span {
+  padding: 0 15px;
+}
+
+.reg-user-admin-link {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.reg-user-admin-link-text {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.reg-user-admin-link-text:hover {
+  text-decoration: underline;
+}
+
+.reg-user-login-link {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.reg-user-login-link-text {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.reg-user-login-link-text:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .reg-user-card {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .reg-user-left-panel {
+    padding: 30px;
+  }
+  
+  .reg-user-left-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .reg-user-features {
+    align-items: center;
+  }
+  
+  .reg-user-right-panel {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reg-user-container {
+    padding: 15px;
+  }
+  
+  .reg-user-left-panel,
+  .reg-user-right-panel {
+    padding: 25px;
+  }
+  
+  .reg-user-welcome {
+    font-size: 1.8rem;
+  }
+  
+  .reg-user-title {
+    font-size: 1.7rem;
+  }
+
+
+  /* Add these styles to your existing RegisterUser.css */
+
+/* OTP-specific styles */
+.reg-user-otp-hint {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 6px;
+  padding-left: 5px;
+}
+
+.reg-user-otp-resend {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.reg-user-resend-link {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reg-user-resend-link:hover {
+  text-decoration: underline;
+}
+
+.reg-user-back-btn {
+  width: 100%;
+  background: none;
+  border: 1px solid #d1d5db;
+  color: #6b7280;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+}
+
+.reg-user-back-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+}

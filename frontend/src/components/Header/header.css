@@ -1,0 +1,55 @@
+/* Reset bits */
+.tne-header * { box-sizing: border-box; }
+
+/* Container */
+.tne-header {
+  position: sticky; top: 0; z-index: 50;
+  background: #ffffffcc; backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid #eaeaea;
+}
+.tne-wrap {
+  max-width: 1200px; margin: 0 auto; height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+}
+
+/* Brand */
+.tne-logo {
+  font-weight: 800; letter-spacing: .2px; text-decoration: none;
+  color: #111827; font-size: 1.125rem;
+}
+
+/* Nav */
+.tne-nav { display: flex; align-items: center; gap: 18px; }
+.tne-nav a {
+  text-decoration: none; color: #374151; font-weight: 500;
+  padding: 8px 10px; border-radius: 10px; transition: background .15s ease;
+}
+.tne-nav a:hover { background: #f3f4f6; }
+.tne-cta {
+  background: #10b981; color: white !important; padding: 8px 14px !important;
+  border-radius: 12px; box-shadow: 0 2px 8px rgba(16,185,129,.25);
+}
+.tne-cta:hover { background: #0ea371; }
+
+/* Burger (mobile) */
+.tne-burger {
+  display: none; background: transparent; border: 0; padding: 6px; margin-left: auto;
+}
+.tne-burger span {
+  display: block; width: 22px; height: 2px; background: #111827; margin: 5px 0;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .tne-burger { display: block; }
+  .tne-nav {
+    position: absolute; left: 0; right: 0; top: 64px;
+    background: #fff; border-bottom: 1px solid #eee;
+    flex-direction: column; align-items: stretch; gap: 0; display: none;
+  }
+  .tne-nav a { padding: 14px 18px; border-radius: 0; }
+  .tne-nav .tne-cta { margin: 8px 16px 16px; text-align: center; }
+  .tne-nav.tne-nav-open { display: flex; }
+}

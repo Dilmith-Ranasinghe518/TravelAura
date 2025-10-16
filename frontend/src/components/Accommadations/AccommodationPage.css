@@ -1,0 +1,228 @@
+/* Page container */
+.accommodation-page,
+.travel-package-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Title */
+.accommodation-title,
+.travel-package-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* List layout */
+.accommodation-list,
+.travel-package-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.accommodation-card,
+.travel-package-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.accommodation-card:hover,
+.travel-package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Slider */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.slider-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Image */
+.accommodation-image,
+.travel-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #d1d5db;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.slider-dot.active {
+  background: #2563eb;
+  transform: scale(1.2);
+}
+
+/* Info section */
+.accommodation-info,
+.travel-package-info {
+  margin-top: 12px;
+}
+
+.accommodation-info h2,
+.travel-package-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.accommodation-info p,
+.travel-package-info p {
+  font-size: 14px;
+  color: #374151;
+  margin: 4px 0;
+}
+
+/* Availability */
+.accommodation-available {
+  color: green;
+  font-weight: bold;
+}
+
+.accommodation-not-available {
+  color: red;
+  font-weight: bold;
+}
+
+/* Buttons */
+.accommodation-actions,
+.travel-package-actions {
+  margin-top: 12px;
+}
+
+.btn-update {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-update:hover {
+  background: #1d4ed8;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+.accommodation-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  align-items: center;
+}
+
+/* Search bar */
+.accommodation-filters input[type="text"] {
+  flex: 2; /* search takes more space */
+  min-width: 250px;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Dropdowns */
+.accommodation-filters select {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Price filter block */
+.price-filter {
+  flex: 1 1 100%; /* still takes full row */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+  align-items: flex-start; /* keep slider left */
+}
+
+.price-filter label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* Slider smaller */
+.price-filter input[type="range"] {
+  width: 200px; /* 👈 make slider shorter */
+  cursor: pointer;
+}

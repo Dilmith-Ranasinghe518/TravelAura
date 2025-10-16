@@ -1,0 +1,203 @@
+/* === Main Container === */
+.update-travel-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.update-travel-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+/* Form Layout */
+.update-travel-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.update-travel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Textarea spans full width */
+.update-travel-grid textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 90px;
+}
+
+/* Labels */
+.update-travel-grid label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Inputs + Textareas */
+.update-travel-grid input,
+.update-travel-grid textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.update-travel-grid input:focus,
+.update-travel-grid textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+/* Checkbox */
+.update-travel-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* === Image Section === */
+.update-travel-images {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.update-travel-images h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Each image row */
+.update-travel-image-field {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: nowrap;
+}
+
+/* Numbered labels (Image 1, Image 2, etc.) */
+.update-travel-image-field label {
+  flex: 0 0 70px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Image URL input */
+.update-travel-image-field input {
+  flex: 1;
+  min-width: 300px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Preview image */
+.update-travel-preview {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* Remove button */
+.btn-remove {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.btn-remove:hover {
+  background: #dc2626;
+  transform: scale(1.02);
+}
+
+/* Add new image button */
+.btn-add-image {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-add-image:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .update-travel-image-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .update-travel-image-field label {
+    flex: none;
+    margin-bottom: 6px;
+  }
+
+  .update-travel-preview {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .btn-remove {
+    align-self: flex-start;
+  }
+}
+
+/* Submit button */
+.btn-submit {
+  background: #10b981;
+  color: white;
+  font-size: 16px;
+  padding: 14px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-submit:hover {
+  background: #059669;
+  transform: scale(1.01);
+}

@@ -1,0 +1,120 @@
+.insert-accommodation-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 10px;
+}
+
+.insert-accommodation-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.insert-accommodation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.insert-accommodation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.insert-accommodation-grid textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 80px;
+}
+
+.insert-accommodation-grid input,
+.insert-accommodation-grid textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.insert-accommodation-grid input:focus,
+.insert-accommodation-grid textarea:focus {
+  border-color: #2563eb;
+}
+
+.insert-accommodation-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Images section */
+.insert-accommodation-images {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.insert-accommodation-image-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.insert-accommodation-preview {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* Buttons */
+.btn-add-image,
+.btn-remove,
+.btn-submit {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-add-image {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-add-image:hover {
+  background: #1d4ed8;
+}
+
+.btn-remove {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-remove:hover {
+  background: #dc2626;
+}
+
+.btn-submit {
+  background: #10b981;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background: #059669;
+}

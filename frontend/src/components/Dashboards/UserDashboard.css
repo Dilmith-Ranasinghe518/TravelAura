@@ -1,0 +1,288 @@
+/* Layout */
+.user-dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+}
+
+/* Sidebar */
+.user-dashboard-sidebar {
+  width: 240px;
+  background: #1f2937;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-dashboard-logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.user-dashboard-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.user-dashboard-menu-item {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.user-dashboard-menu-item:hover {
+  background: #374151;
+}
+
+.user-dashboard-menu-item.active {
+  background: #2563eb;
+}
+
+.user-dashboard-menu-item.logout {
+  margin-top: auto;
+  background: #ef4444;
+  text-align: center;
+}
+
+.user-dashboard-menu-item.logout:hover {
+  background: #dc2626;
+}
+
+/* Main content */
+.user-dashboard-main {
+  flex-grow: 1;
+  padding: 20px 30px;
+}
+
+/* Header */
+.user-dashboard-header h1 {
+  font-size: 26px;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.user-dashboard-header p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.user-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.user-dashboard-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.user-dashboard-card h3 {
+  color: #374151;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.user-dashboard-card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* Table */
+.user-dashboard-content h2 {
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.user-dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-dashboard-table th,
+.user-dashboard-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-dashboard-table th {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+
+.user-dashboard-table td {
+  color: #4b5563;
+}
+
+/* Status */
+.status.success {
+  color: green;
+  font-weight: bold;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.cancelled {
+  color: red;
+  font-weight: bold;
+} 
+
+/* Settings Section */
+.user-dashboard-settings {
+  margin-top: 20px;
+}
+
+.settings-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-update-form {
+  margin-bottom: 30px;
+}
+
+.profile-update-form h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-update-form div {
+  margin-bottom: 15px;
+}
+
+.profile-update-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.profile-update-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.profile-update-form button {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-update-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-account-container {
+  text-align: center;
+}
+
+.delete-account-btn {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-account-btn:hover {
+  background-color: #dc2626;
+}
+
+
+/* Settings Section */
+.user-dashboard-settings {
+  margin-top: 20px;
+}
+
+.settings-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-update-form {
+  margin-bottom: 30px;
+}
+
+.profile-update-form h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-update-form div {
+  margin-bottom: 15px;
+}
+
+.profile-update-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.profile-update-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.profile-update-form button {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-update-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-account-container {
+  text-align: center;
+}
+
+.delete-account-btn {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-account-btn:hover {
+  background-color: #dc2626;
+}
+
