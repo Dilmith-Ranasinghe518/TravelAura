@@ -30,7 +30,7 @@ const ReviewForm = ({ onReviewAdded, onClose }) => {
         setComment("");
 
         if (onReviewAdded) onReviewAdded();
-        if (onClose) onClose(); // ✅ close after success
+        if (onClose) onClose(); //  close after success
       } else {
         setError(result.message);
         toast.error(`❌ ${result.message}`);

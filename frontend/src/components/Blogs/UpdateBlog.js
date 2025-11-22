@@ -4,8 +4,6 @@ import BlogsNav from "../BlogsNav/BlogsNav";
 import { Link } from 'react-router-dom';
 import AdminDashboard from "../AdminDashboard/admindash";
 
-
-
 const UpdateBlog = () => {
   const { id } = useParams(); // Get blog ID from URL
   const navigate = useNavigate();

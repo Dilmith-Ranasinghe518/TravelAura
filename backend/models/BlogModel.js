@@ -40,3 +40,4 @@ const BlogSchema = new Schema(
 );
 
 module.exports = mongoose.model("BlogModel", BlogSchema);
+
