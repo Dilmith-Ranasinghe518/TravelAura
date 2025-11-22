@@ -41,3 +41,4 @@ const getAllReviews = async(req, res, next)=>{
 
 exports.getAllReviews = getAllReviews;
 exports.addReviews = addReviews;
+
